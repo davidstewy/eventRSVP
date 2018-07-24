@@ -1,0 +1,14 @@
+html
+  head
+    title RSVP
+  body
+    h1 Please fill out the following RSVP form.
+    form (action='/reply', method='POST')
+    p
+      | name:
+      input(type='text', name='title', value='')
+      |        email:
+      input(type='email', name='email' value='')
+      |        attending:
+      //- input(type='radio', name='attending'  )
+    

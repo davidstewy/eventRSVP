@@ -11,9 +11,13 @@ app.set('views', './views')
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) =>{
-
+   res.render('index', { title: 'Hey', message: 'Hello there!' })
 });
 
+app.post('/reply', (req, res) => {
+
+
+});
 
 
 
